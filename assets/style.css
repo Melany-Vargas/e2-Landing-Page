@@ -1,0 +1,62 @@
+/* fuentes */
+@import url("https://fonts.google.com/specimen/Montserrat:wght@300;400;500;600;700;800;900");
+:root {
+    /* bg colors */
+    --background: #ddf7f8;
+    --nav-bg: #420b1b;
+    --tex-white:#f8f9fa;
+}
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "montserrat" , sans-serif;
+ text-decoration: none;
+ list-style-type: none;
+
+}
+/* header */
+header{
+  background: var(--nav-bg);  
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0rem 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+
+}
+
+.logo{
+height: 210%;
+
+}
+.navbar,
+.navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.navbar{
+    gap: 150px;
+
+}
+.navbar-list{
+    gap: 30px;
+}
+.navbar-list a{
+    color:rgb(185, 184, 184);
+    font-size: 1rem;
+}
+.navbar-list li:first-child > a{
+color:var(--tex-white);
+font-weight: 500;
+}
+.texto{
+    color:#f8f9fa;
+    position:center;
+}
