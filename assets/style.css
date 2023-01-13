@@ -18,15 +18,17 @@
 }
 /* header */
 .header{
+    height: 50px;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
     background: rgb(253,92,99);
     background: linear-gradient(143deg, rgba(253,92,99,1) 26%, rgba(158,27,50,1) 99%);  
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  padding: 0px 50px
- 
+    z-index: 1;
 }
 
 .logo{
@@ -68,7 +70,20 @@ font-weight: 700;
  border-radius: 10px;
  cursor: pointer;
 }
+
+.navbar {
+    display: flex;
+}
+.navbar i {
+    font-size: 36px;
+    display: none;
+
+}
+#toggle-menu {
+    display: none;
+}
 .main{
+    width: 100%;
     background: #E3FDF5;
     background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
     display: flex;
@@ -76,54 +91,60 @@ font-weight: 700;
     align-items: center;
     justify-content: center;
     color: white;
-    width: 100%;
+    
 }
 
 /* Hero */
 #hero {
-    margin-top: 65px;
-    padding: 70px 0;
-    max-width: 1200px;
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
+    padding: 70px 0px;
+    width: 90%;
+    justify-content: space-around;
     align-items: center;
-   
+    gap: 50px;
+
 }
+
 .hero-info {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 30px;
-    width: 50%;
-   
+    width: 50%;   
+
    
 }
+
 
 .hero-info h1 {
     font-size: 40px;
     width: 80%;
-    min-width: 500px;
+    min-width: 400px;
     font-weight: 800;
     background: linear-gradient(80deg, rgba(158,27,50,1) 29%, rgba(253,92,99,1) 72%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+    justify-content: center;
+
    
-
-
 }
 
 .hero-info p {
+    font-weight: 500;
     font-size: 20px;
-    width: 60%;
+    max width: 350px;
     color: #860927;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
 
 }
 .hero-info button {
     background-color:#860927;
     color:white;
     width: 100px;
-    margin: 25px;
+    margin: 5px;
     padding: 6px 15px;
     border-radius: 15px;
     border: none;
@@ -137,20 +158,237 @@ font-weight: 700;
     background-color: #f3d1d4;
 }
 .hero-img {
-    height: ;
+
     background:  #deeff3;
     padding: 7px;
     border-radius: 39px;
     display: flex;
     justify-content: center;
+ 
  }
+
  .descripcion {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align:center;
-    gap: 20px;
-    width: 50%;
+    width: 90%;
+    max-width: 1400px;
+    gap: 10px;
+    padding: 40px 0px;
     font-size: 15px;
-    width: 50%;
+    font-weight: 500;
+    color: #860927;
+
+ }
+ .descripcion br {
+
+ }
+
+  /* reasons-card */
+
+ #info-cards {
+    padding: 30px 0;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    gap: 20px;
+
+ }
+ #info-cards h2 {
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(80deg, rgba(158,27,50,1) 29%, rgba(253,92,99,1) 72%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+
+ }
+ #info-cards span {
+    font-weight: 500;
+    font-size: 15px;
+    color:#860927
+
+ }
+
+ #info-cards h3 {
+    font-weight: 800;
+    font-size: 30px;
+    color:#F1536A
+ }
+ #info-cards p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    width: 90%;
+    max-width: 1400px;
+    gap: 10px;
+    padding: 30px 0px;
+    font-weight: 400;
+    font-size: 14px;
     color: #860927;
  }
+.reasons-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.reasons-card {
+   width: 450px;
+   height: 400px;
+   padding: 45px 40px;
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   text-align: center;
+   background: white;
+   border-radius: 15px;
+   gap: 20px;
+
+
+}
+
+/*seccion contactame */
+#contact-section {
+    display: flex;
+    padding: 80px 30px;
+    width: 100%;
+    justify-content: space-around;
+    color: #860927;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap 20px;
+}
+.contact-info-container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.contac-colum h2 {
+    font-size: 38px;
+    justify-content: center;
+}
+.contac-colum h3 {
+    font-size: 26px;
+
+}
+.contac-colum p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+.contac-colum a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contac-colum a {
+    text-decoration: none;
+    color:#860927
+}
+ iframe {
+    height: 300px;
+    width: 350px;
+ }
+
+ footer {
+    color: #00223E;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 20px;
+ }
+ @media (max-width: 992px) {
+    
+    .hero-info h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+    .hero-info p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+    .hero-info button {
+        justify-content: center;
+    }
+    .hero-img {
+        display: none;
+    }
+
+   #contact-section {
+    flex-direction: column;
+    align-items: center;
+   }
+   .contact-info-container {
+    gap: 50px;
+   }
+
+ }
+
+ @media (max-width: 745px) {
+    .hero-info {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+    .hero-info h1 {
+        width: 100%;
+
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        background: #E3FDF5;
+        background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); 
+    }
+    .navbar ul  {
+        
+        background-color: white;
+        width: 100%;
+        height: calc(100vh - 90px);
+        position: absolute;
+        top: 50px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+        transition: all 0.5s ease-out;
+    }
+    
+    .cart-icon {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        transform: translateX(0%);
+        transition: all 0.5s ease-in;
+    }
+    .navbar-list a {
+        transform: translateX(0%);
+        color: #860927;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .hero-info p {
+        max-width: 100%;
+    }
+}
